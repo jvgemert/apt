@@ -1,5 +1,6 @@
-Python code for Action Proposals from dense Trajectory (APT). 
-Written by Jan van Gemert, if you find any bugs or improvements, feel free to let me know. 
+# Python code for Action localization Proposals from dense Trajectory (APT)
+
+Written by Jan van Gemert (http://jvgemert.github.io), if you find any bugs or improvements, feel free to let me know. 
 If you find the code useful, please cite our paper: "APT: Action localization Proposals from dense Trajectories"
 
 Note that this code may not run out of the box.
