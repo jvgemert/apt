@@ -13,8 +13,8 @@ For convenience we include all third party code here, although all credit for th
  - numpy
  - h5py (hdf5 data format)
  - cython
- - yael ( best: https://gforge.inria.fr/projects/yael/ or see `third/yael_v438.tar.gz`; Configure yael with `./configure.sh --enable-numpy` )
- - Improved Trajectory code (http://lear.inrialpes.fr/people/wang/improved_trajectories or see folder `third/`. Note that `DenseTrackStab.cpp` is adapted to export the trajectory `x` and `y` coordinates per frame, and the video statistics (width, height, lenght) are exported. See the folder `third/` for the modified version of `DenseTrackStab.cpp`. And, see `tubePy/extractDT.sh` for an example script on how to extract them.`
+ - yael ( best: https://gforge.inria.fr/projects/yael/ or see `third/yael_v438.tar.gz`; Configure yael with `./configure.sh --enable-numpy`. And you may have to add the yael install directory to the `PYTHONPATH`.)
+ - Improved Trajectory code (http://lear.inrialpes.fr/people/wang/improved_trajectories or see folder `third/`. Note that `DenseTrackStab.cpp` is adapted to export the trajectory `x` and `y` coordinates per frame, and the video statistics (width, height, lenght) are exported. See the folder `third/` for the modified version of `DenseTrackStab.cpp`. And, see `tubePy/extractDT.sh` for an example script on how to extract them.
 
 # Cython:
 The APT package contains Python code with some parts in cython. The code also works without cython, albeit slower (slower parts are: clustering, merging, and IoU computations). To take advantage of the cython speedup you have to compile the `tubePy/*.pyx` files (see the `compile2cython.sh` script that calls the individual `tubePy/compile*.sh` scripts). 
