@@ -51,7 +51,7 @@ featFile=example/feat/$vidName/idt.hdf5;
 # trajectory clusters
 clustFile=example/clusts/$vidName/nn"$nrNN".hdf5;
 # tubes
-tubeFile=example/tubes/$vidName/nn"$nrNN"T"$nrTrajThresh4Tube".hdf5;
+tubeFile=example/tube/$vidName/nn"$nrNN"T"$nrTrajThresh4Tube".hdf5;
 # Intersection over Union scores
 iouFile=example/IoU/$vidName/nn"$nrNN"T"$nrTrajThresh4Tube".txt;
 # Intersection over Union scores based on tubes

@@ -115,21 +115,22 @@ def main(featGzipFname, outPath):
     if line.find('video size,') != 0:
         raise ValueError('File does not seem to be in correct format: %s' % featGzipFname)
 
-    print 'writing to', outPath
+    print '\twriting to', outPath
     outHDF5file = h5py.File( outPath, 'w')
     getLWH(line, outHDF5file)
     outHDF5file.close()
 
+    print '\tCounting nr of features:', 
     nrFeat = 0
     for line in f:
         nrFeat += 1
         if nrFeat % 10000 == 0:
-            print int(nrFeat/10000),
+            print '%d0k' % int(nrFeat/10000),
             sys.stdout.flush()
 
     f.close()
 
-    print 'nrFeat', nrFeat
+    print '; Total:', nrFeat
     
     # for the sake of memory, process each feature separately
 

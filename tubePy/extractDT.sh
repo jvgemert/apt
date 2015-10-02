@@ -19,9 +19,10 @@ mkdir -p $localDir
 #/var/scratch/jvgemert/DTPy/third/DenseTrackStab $1 | gzip > "$localDir"/DenseTrackStab.txt.gz
 ./third/DenseTrackStab $1 | gzip > "$localDir"/DenseTrackStab.txt.gz
 
-echo  "$localDir"/DenseTrackStab.txt.gz
+echo "Saved temporary trajectories to:"  "$localDir"/DenseTrackStab.txt.gz
 echo
 echo "** Convert the trajectories to the format as used for DTP **"
+echo python ./tubePy/runConvertDenseTraj2fvec.py "$localDir"/DenseTrackStab.txt.gz $2
 python ./tubePy/runConvertDenseTraj2fvec.py "$localDir"/DenseTrackStab.txt.gz $2
 
 echo
