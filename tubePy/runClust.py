@@ -84,7 +84,7 @@ def main(featPath, nrSpatNeighbors, isTrimmedVideo, outFileName):
                         enoughTrajectories = False
                         continue
 
-                    vidInfo = denseTraj.getFeatFromFileByName(featPath, 'vidinfo')
+                    #vidInfo = denseTraj.getFeatFromFileByName(featPath, 'vidinfo')
                     #simMatIDs, simMat = tubeClust.getTrackNeighborsYaelYnumpyChunked(feat, nrSpatNeighbors, int(vidInfo[0]))
                     simMatIDs, _simMat = tubeClust.getTrackNeighborsYaelYnumpy(feat, nrSpatNeighbors)
                     neighborGraph = tubeClust.getNeighborGraph(simMatIDs, nrTracks)

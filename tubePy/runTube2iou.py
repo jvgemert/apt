@@ -5,7 +5,7 @@ import denseTraj
 import tubeIoU
 
 from tubeList import TubeList 
-from singleTube import SingleTube
+
 
 def main(doTubeFormat, inFileName, outIoUfile, gtPath, nrTrajThresh4Tube=-1, featPath=''):
 
@@ -16,7 +16,6 @@ def main(doTubeFormat, inFileName, outIoUfile, gtPath, nrTrajThresh4Tube=-1, fea
     print '\tRead ground truth;',
     gtTubes = TubeList()
     gtTubes.readHDF5(gtPath)
-    nrGTtubes = len(gtTubes)
 
     outPath = os.path.dirname(outIoUfile)
     if not os.path.exists( outPath ):
