@@ -84,6 +84,38 @@ To start, it is best to read and run the 'doExample.sh' file, it has all steps r
 
 # Frequently Asked Questions
 
+
+### - Did the UCF101 scores change?
+
+Yes. We made a mistake in the ground truth. We corrected our ground truth and make it [available](http://isis-data.science.uva.nl/jvgemert/apt/ucf101GT.tar.gz). We updated the scores in the [paper](http://jvgemert.github.io/pub/gemertBMVC15APTactionProposals.pdf), the numbers are different but the conclusions do not change. 
+
+
+### - Do you have pre-computed tubes available?
+
+Yes.
+##### UCF-Sports (trimmed)
+150 sports videos in 10 classes, available from http://crcv.ucf.edu/data/UCF_Sports_Action.php
+
+- [ucfSportsAptTube.tar.gz](http://isis-data.science.uva.nl/jvgemert/apt/ucfSportsAptTube.tar.gz) : 
+The tube proposals
+- [ucfSportsGT.tar.gz](http://isis-data.science.uva.nl/jvgemert/apt/ucfSportsGT.tar.gz) : the ground truth tubes
+
+##### UCF-101 (trimmed)
+3,207 youtube videos for action detection of 24 classes, available from http://crcv.ucf.edu/data/UCF101.php
+
+- [ucf101AptTube.tar.gz](http://isis-data.science.uva.nl/jvgemert/apt/ucf101AptTube.tar.gz) : 
+The tube proposals
+- [ucf101GT.tar.gz](http://isis-data.science.uva.nl/jvgemert/apt/ucf101GT.tar.gz) : the ground truth tubes
+
+
+##### MSR Action Dataset II (untrimmed)
+54 videos of 3 classes, available from http://research.microsoft.com/en-us/um/people/zliu/actionrecorsrc/
+
+- [MSRIIAptTube.tar.gz](http://isis-data.science.uva.nl/jvgemert/apt/MSRIIAptTube.tar.gz) : 
+The tube proposals
+- [MSRIIGT.tar.gz](http://isis-data.science.uva.nl/jvgemert/apt/MSRIIGT.tar.gz) : the ground truth tubes
+
+
 ### - What is the tube dataformat?
 A tube is a set of frameNRs and  boundingBoxes.
 
@@ -128,29 +160,6 @@ Examples on how to read tubes:
 
 Other languages like c/c++ also have hdf5 implementations.
 
-### - Do you have pre-computed tubes available?
 
-Yes.
-##### UCF-Sports (trimmed)
-150 sports videos in 10 classes, available from http://crcv.ucf.edu/data/UCF_Sports_Action.php
-
-- [ucfSportsAptTube.tar.gz](http://isis-data.science.uva.nl/jvgemert/apt/ucfSportsAptTube.tar.gz) : 
-The tube proposals
-- [ucfSportsGT.tar.gz](http://isis-data.science.uva.nl/jvgemert/apt/ucfSportsGT.tar.gz) : the ground truth tubes
-
-##### UCF-101 (trimmed)
-3,207 youtube videos for action detection of 24 classes, available from http://crcv.ucf.edu/data/UCF101.php
-
-- [ucf101AptTube.tar.gz](http://isis-data.science.uva.nl/jvgemert/apt/ucf101AptTube.tar.gz) : 
-The tube proposals
-- [ucf101GT.tar.gz](http://isis-data.science.uva.nl/jvgemert/apt/ucf101GT.tar.gz) : the ground truth tubes
-
-
-##### MSR Action Dataset II (untrimmed)
-54 videos of 3 classes, available from http://research.microsoft.com/en-us/um/people/zliu/actionrecorsrc/
-
-- [MSRIIAptTube.tar.gz](http://isis-data.science.uva.nl/jvgemert/apt/MSRIIAptTube.tar.gz) : 
-The tube proposals
-- [MSRIIGT.tar.gz](http://isis-data.science.uva.nl/jvgemert/apt/MSRIIGT.tar.gz) : the ground truth tubes
 
 ---
