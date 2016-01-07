@@ -52,7 +52,7 @@ The 'doExample.sh' file has all steps explained to compute APT for the included 
     4- compare proposal clusters/tubes to groundTruth, outputs IoU overlap scores in --> IoU/
     5- convert proposal clusters/tubes to (0-based) trajectory IDs, so that the trajectories in a proposal can be mapped to Vlad/Fisher-vector/BoW --> trajIDs/ 
 
-all steps in this package can be done on the internal cluster format (which will be converted to tubes internally each time), or, they can be done on explicitly exported tube proposals.
+All steps in this package can be done on the internal cluster format (which will be converted to tubes internally each time), or, they can be done on explicitly exported tube proposals.
 The reason for providing a 'detour' to tube files, is the ability to use tubes in other software.
 The example includes all steps for the internal cluster format, and also for tube files.
 
@@ -116,8 +116,12 @@ The tube proposals
 - [MSRIIGT.tar.gz](http://isis-data.science.uva.nl/jvgemert/apt/MSRIIGT.tar.gz) : the ground truth tubes
 
 
+### - Do you also have the 'Tubelet' results?
+
+Yes. The Tubelet action tube proposals come from our CVPR 2014 paper [Action Localization by Tubelets from Motion](http://jvgemert.github.io/pub/jain-tubelets-cvpr2014.pdf) and are computed on MSR-II [MSRIITubeletCVPR14.tar.gz](http://isis-data.science.uva.nl/jvgemert/apt/MSRIITubeletCVPR14.tar.gz) and on UCF-Sports [ucfSportsTubeletCVPR14.tar.gz](http://isis-data.science.uva.nl/jvgemert/apt/ucfSportsTubeletCVPR14.tar.gz).
+
 ### - What is the tube dataformat?
-A tube is a set of frameNRs and  boundingBoxes.
+A tube is a set of frameNRs and  bounding boxes.
 
 Specifically, a tube is represented as an array of 5 numbers: [frameNr, minX, minY, maxX, maxY].
 
